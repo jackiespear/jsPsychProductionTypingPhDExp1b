@@ -248,17 +248,10 @@ var list_3T = test_words_mixed;
 
 // create a variable to hold the trial information, which changes based on condition
 var stimuli = [];
-var stimuli_test= [];
-if (condition_assignment == "pureread") { //if pure_read is sampled from above randomization routine, the stimuli presented will be..
-  stimuli = list_2;
-  stimuli_test = list_2T;
-} else if (condition_assignment == "pureread") {
-  stimuli = list_2;
-  stimuli_test = list_2T;
-}; 
+var stimuli_test= []; 
 
 //original randomization procedure for all 3 conditions
-/* var stimuli = [];
+var stimuli = [];
 var stimuli_test= [];
 if (condition_assignment == "pureproduce") { //if pure_read is sampled from above randomization routine, the stimuli presented will be..
   stimuli = list_1;
@@ -269,7 +262,7 @@ if (condition_assignment == "pureproduce") { //if pure_read is sampled from abov
 } else if (condition_assignment == "mixed") {
   stimuli = list_3;
   stimuli_test = list_3T;
-};  */
+}; 
 
 //console.table(stimuli);
 //console.log(stimuli);
@@ -306,14 +299,14 @@ if (condition_assignment == "pureproduce") { //if pure_read is sampled from abov
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  databaseURL: "https://productiontypingphdexp1-default-rtdb.firebaseio.com/",
-  apiKey: "AIzaSyC4Ob7cXgxwyF0UbGVpbh1YRnk6ijcekoY",
-  authDomain: "productiontypingphdexp1.firebaseapp.com",
-  projectId: "productiontypingphdexp1",
-  storageBucket: "productiontypingphdexp1.appspot.com",
-  messagingSenderId: "1098016521877",
-  appId: "1:1098016521877:web:45c262bab69e500425e59c",
-  measurementId: "G-RRQMSNJ9QL"
+  databaseURL: "https://productiontypingphdexp1b-default-rtdb.firebaseio.com/",
+  apiKey: "AIzaSyDzGcGjUtwonFxsmeSEMGtLe-Jjv8WZm-U",
+  authDomain: "productiontypingphdexp1b.firebaseapp.com",
+  projectId: "productiontypingphdexp1b",
+  storageBucket: "productiontypingphdexp1b.appspot.com",
+  messagingSenderId: "252062901683",
+  appId: "1:252062901683:web:b04b9ce30807b68f4a97c6",
+  measurementId: "G-32NC7HMJK6"
 };
 
 // Initialize Firebase
