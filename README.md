@@ -1,5 +1,5 @@
-# jsPsychProductionTypingPhDExp1
-Experiment 1 of my PhD Thesis. Production by typing using words from Johns and Swanson (1988)
+# jsPsychProductionTypingPhDExp1b
+Experiment 1b of my PhD Thesis. Production by typing using nonwords from Johns and Swanson (1988)
 
 This experiment is a standard yes/no recognition memory test.
 During the study phase, participants will be presented with word pairs and instructed to produce the green words but only read the red words.
