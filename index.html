@@ -250,8 +250,19 @@ var list_3T = test_words_mixed;
 var stimuli = [];
 var stimuli_test= []; 
 
-//original randomization procedure for all 3 conditions
+//updated procedure for 2 conditions
 var stimuli = [];
+var stimuli_test= [];
+if (condition_assignment == "pureread") { //if pure_read is sampled from above randomization routine, the stimuli presented will be..
+  stimuli = list_2;
+  stimuli_test = list_2T;
+} else if (condition_assignment == "mixed") {
+  stimuli = list_3;
+  stimuli_test = list_3T;
+}; 
+
+//original randomization procedure for all 3 conditions
+/* var stimuli = [];
 var stimuli_test= [];
 if (condition_assignment == "pureproduce") { //if pure_read is sampled from above randomization routine, the stimuli presented will be..
   stimuli = list_1;
@@ -262,7 +273,7 @@ if (condition_assignment == "pureproduce") { //if pure_read is sampled from abov
 } else if (condition_assignment == "mixed") {
   stimuli = list_3;
   stimuli_test = list_3T;
-}; 
+}; */ 
 
 //console.table(stimuli);
 //console.log(stimuli);
