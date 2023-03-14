@@ -230,7 +230,7 @@ study_words_pureread = JSON.parse(study_words_pureread);
 //  Randomly Assign one of the three between-subjects conditions: mixed-list, pure-produce, or pure-read  //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var condition_assignment = jsPsych.randomization.sampleWithoutReplacement(['pureread', 'pureproduce', 'mixed'], 1)[0];
+var condition_assignment = jsPsych.randomization.sampleWithoutReplacement(['pureread', 'pureread'], 1)[0];
 jsPsych.data.addProperties({
   condition: condition_assignment
 });
@@ -253,9 +253,9 @@ var stimuli_test= [];
 //updated procedure for 2 conditions
 var stimuli = [];
 var stimuli_test= [];
-if (condition_assignment == "mixed") { //if pure_read is sampled from above randomization routine, the stimuli presented will be..
-  stimuli = list_3;
-  stimuli_test = list_3T;
+if (condition_assignment == "pureread") { //if pure_read is sampled from above randomization routine, the stimuli presented will be..
+  stimuli = list_2;
+  stimuli_test = list_2T;
 } else if (condition_assignment == "pureread") {
   stimuli = list_2;
   stimuli_test = list_2T;
